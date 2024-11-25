@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class MenuItem {
+class menuItem {
   final String title;
   final String subTitle;
   final String link;
   final IconData icon;
 
-  const MenuItem({
+  const menuItem({
     required this.title,
     required this.subTitle,
     required this.link,
@@ -14,14 +14,14 @@ class MenuItem {
   });
 }
 
-const appMenuItems = <MenuItem>[
-  MenuItem(
+const appMenuItems = <menuItem>[
+  menuItem(
     title: 'Botones',
     subTitle: 'Ejemplos de botones',
     link: '/buttons',
     icon: Icons.smart_button_outlined,
   ),
-  MenuItem(
+  menuItem(
     title: 'Tarjetas',
     subTitle: 'Un contenedor de tarjetas',
     link: '/card',
