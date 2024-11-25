@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:widgets_app/config/theme/menu/menu_items.dart';
+import 'package:widgets_app/presentation/Screens/buttons/buttons_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -54,7 +55,7 @@ class CustomListTile extends StatelessWidget {
       title: Text(MenuItem.title),
       subtitle: Text(MenuItem.subTitle),
       onTap: () {
-        
+        Navigator.pushNamed(context, MenuItem.link);
       },
     );
   }
