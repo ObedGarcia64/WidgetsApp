@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:widgets_app/config/theme/menu/menu_items.dart';
-import 'package:widgets_app/presentation/Screens/cards/cards_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   static const String name = 'home_screen';
@@ -12,7 +11,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Fullter + Material 3'),
+        title: const Text('Flutter + Material 3'),
       ),
       body: const _HomeView(),
     );
@@ -58,7 +57,7 @@ class CustomListTile extends StatelessWidget {
       title: Text(MenuItem.title),
       subtitle: Text(MenuItem.subTitle),
       onTap: () {
-        context.pushNamed(CardsScreen.name);
+        context.push(MenuItem.link);
       },
     );
   }
