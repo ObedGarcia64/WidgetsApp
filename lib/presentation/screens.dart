@@ -1,3 +1,9 @@
+export 'package:widgets_app/presentation/Screens/animated/animated_screen.dart';
+export 'package:widgets_app/presentation/Screens/app_tutorial/app_tutorial_screen.dart';
+export 'package:widgets_app/presentation/Screens/infinite_scroll/infinite_scroll_screen.dart';
+export 'package:widgets_app/presentation/Screens/progress/progress_screen.dart';
+export 'package:widgets_app/presentation/Screens/snackbar/snackbar_screen.dart';
+export 'package:widgets_app/presentation/Screens/ui_controls/ui_conrols_screen.dart';
 export 'package:widgets_app/presentation/Screens/Home/home_screen.dart';
 export 'package:widgets_app/presentation/Screens/buttons/buttons_screen.dart';
 export 'package:widgets_app/presentation/Screens/cards/cards_screen.dart';
