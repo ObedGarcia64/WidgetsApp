@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:widgets_app/config/theme/menu/menu_items.dart';
-import 'package:widgets_app/presentation/Screens/buttons/buttons_screen.dart';
+import 'package:widgets_app/presentation/Screens/cards/cards_screen.dart';
 
 class HomeScreen extends StatelessWidget {
+  static const String name = 'home_screen';
+
   const HomeScreen({super.key});
 
   @override
@@ -12,7 +14,7 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Fullter + Material 3'),
       ),
-      body: _HomeView(),
+      body: const _HomeView(),
     );
   }
 }
@@ -56,7 +58,7 @@ class CustomListTile extends StatelessWidget {
       title: Text(MenuItem.title),
       subtitle: Text(MenuItem.subTitle),
       onTap: () {
-        context.push(MenuItem.link);
+        context.pushNamed(CardsScreen.name);
       },
     );
   }
