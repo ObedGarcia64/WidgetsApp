@@ -45,4 +45,10 @@ const appMenuItems = <menuItem>[
     link: '/animated',
     icon: Icons.animation,
   ),
+  menuItem(
+    title: 'Ui control Screen',
+    subTitle: 'Controles de la interfaz de usuario',
+    link: '/ui-controls',
+    icon: Icons.car_repair_sharp,
+  ),
 ];
