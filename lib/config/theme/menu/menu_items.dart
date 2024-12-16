@@ -51,4 +51,10 @@ const appMenuItems = <menuItem>[
     link: '/ui-controls',
     icon: Icons.car_repair_sharp,
   ),
+  menuItem(
+    title: 'Introduccion',
+    subTitle: 'Tutorial de la aplicacion',
+    link: '/tutorial',
+    icon: Icons.info_outline_rounded,
+  ),
 ];
